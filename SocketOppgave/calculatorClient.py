@@ -1,7 +1,7 @@
 from socket import *
 
 client = socket(AF_INET, SOCK_STREAM)
-client.connect(('192.168.56.1', 8000))
+client.connect(('127.0.0.1', 8000))
 
 while True:
     operation = input("Enter a mathematical operation (e.g., '7 + 10'), or 'exit' to quit: ")
